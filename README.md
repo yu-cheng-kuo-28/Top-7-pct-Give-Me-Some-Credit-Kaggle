@@ -1,44 +1,12 @@
 # Top-7-pct_Give-Me-Some-Credit_Kaggle
 
 
-Skip to content
-Search or jump to…
+## (1) Introduction
+- It's a [closed cometition on Kaggle in 2011](https://www.kaggle.com/c/GiveMeSomeCredit/overview). Competitors were required to predict credit deault based on an unbalanced dataset with target having (0, 1) = (93.32% , 6.68%). Therefore, the model evaluation metric was AUC.\
+- No.1 ~ No.3 won prizes. No.4 ~ No.11 won gold medals. No.12 ~ No.50 won silver medals. No.51 ~ No.100 won bronze medals. 
+- I did this project in 2020/06.
+- After thorough feature engineering, I leveraged LR, RF & XGBoost, then did double-layer stacking. Finally, I got 14.83% (17/924) on public leaderboard as well as 6.82% (63/924) on private leaderboard, which equivalent to getting a bronze medal in this long closed competition. 
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@mortonkuo 
-mortonkuo
-/
-Top-4-pct_Titanic_Kaggle
-1
-0
-0
-Code
-Issues
-Pull requests
-Discussions
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Top-4-pct_Titanic_Kaggle
-/
-README.md
-in
-main
- 
-
-Spaces
-
-2
-
-Soft wrap
-1
 # Top-4-pct_Titanic_Kaggle
 2
 Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This analysis was ***conducted with R***.
