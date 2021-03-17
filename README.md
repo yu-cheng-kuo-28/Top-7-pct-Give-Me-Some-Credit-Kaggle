@@ -234,10 +234,11 @@ From the fact that XGBoost outperforms RF, we conclude that the noise of this da
 #### 8-6-14 Private Score Leaderboard (Final Ranking)
 ![21](21_Private_Ranking.png)
 
+- After thorough feature engineering, I leveraged LR, RF & XGBoost, then did a double-layer stacking. Finally, I got 14.83% (17/924) on public leaderboard and 6.82% (63/924) on private leaderboard, which is equivalent to getting a bronze medal in this long closed competition.
 
 ## (9) Conclusion 
 
-- We choose the best public socre one with 14.83% (137/924) on public leaderboard, which correspond to achieving 6.82% (63/924) on private leaderboard.  
+- We choose the best public socre one with 14.83% (137/924) on public leaderboard, which correspond to achieving 6.82% (63/924) on private leaderboard, which is equivalent to getting a bronze medal in this long closed competition.
 
 - As for reflection, We may add interactions in to RF & XGBoost models for better performance.
 
