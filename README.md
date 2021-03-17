@@ -4,16 +4,16 @@
 - I did this project in 2020/06 as the final project of the *graduate level* course **"R Computing for Business Data Analytics"** of *department of MIS* in NCCU. In addition, I got ***97 (A+)*** in this course.
 - Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detials.
 
-## Outline
-(1) Introduction
-(2) Literature Review
-(3) Imbalanced Classification
-(4) Missing Value Imputation
-(5) EDA before Feature Engineering
-(6) Feature Engineering
-(7) EDA after Feature Engineering
-(8) Model Building, Feature Selection & Outcomes
-(9) Conclusion
+## Outline 
+(1) Introduction \
+(2) Literature Review \
+(3) Imbalanced Classification \
+(4) Missing Value Imputation \
+(5) EDA before Feature Engineering \
+(6) Feature Engineering \
+(7) EDA after Feature Engineering \
+(8) Model Building, Feature Selection & Outcomes \
+(9) Conclusion \
 (10) Reference
 
 ## (1) Introduction
