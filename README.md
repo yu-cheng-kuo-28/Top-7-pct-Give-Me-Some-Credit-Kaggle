@@ -78,27 +78,49 @@ mice.data_test <- mice(cs_test02,
 ```
 Imputing training data and test data to avoid *"data leakage"*. This whole dataset is huge, with training dataset is a 150,000 x 11 matirx along with test dataset is a 101,503 x 11 matirx. We use mice() with method = "cart" since the size of the dataset make using "rf" too time-consuming.
 
-## (5) EDA (Exploratory Data Analysis)
+## (5) EDA before Feature Engineering
+
+EDA stands for exploratory data analysis. Below are the original distributions & correlation matirx of features.
 
 ![02](02_hist_1.png)
 ![03](03_hist_2.png)
 ![04](04_correlation_1.png)
 
-![05](05_hist_3.png)
-![06](06_hist_4.png)
-![07](07_correlation_2.png)
-
+We find most of the features are slightly positively skewed. Besides, there are 3 highly related features.
 
 ## (6) Feature Engineering
 
-## (7) Model Building & Feature Selection
+1. RevolvingUtilizationOfUnsecuredLines：Changing values > 1.2 to 1.2, yielding new feature "BaLim_ratio".
+2. age：Changing an outlier at age = 0 to the closest value 20, yielding new feature "age_2".
+4. MonthlyIncome：Changing values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
+
+4. NumberOfDependents：將NumberOfDependents >2 的極端值改成 2，產生新變數 Dep。
+5. DebtRatio：將DebtRatio >= 1200 的改成6，將 1200 > DebtRatio > 的改成5 ，產生新變數D_Ratio。
+11
+6. NumberOfOpenCreditLinesAndLoans：+1 後取log( )，產生新變數 OCLAL。
+7. NumberRealEstateLoansOrLines：將NumberRealEstateLoansOrLines >5 的改成5，產生新變數
+REOL。
+8. NumberOfTime30.59DaysPastDueNotWorse：將59DaysPastDueNotWorse >3 的改成3，產生新變數
+Num_30.59。
+9. NumberOfTime60.89DaysPastDueNotWorse：將NumberOfTime60.89DaysPastDueNotWorse >2 的改
+成2，產生新變數Num_60.89。
+10. NumberOfTimes90DaysLate：將NumberOfTimes90DaysLate >2 的改成2，產生新變數Num_90。
 
 
-## (8) Conclusion 
+
+
+## (7) EDA after Feature Engineering
 
 
 
-## (9) Reference
+## (8) Model Building & Feature Selection
+
+
+## (9) Conclusion 
+
+
+
+## (10) Reference
 
 1. Zumel, N., Mount, J. (2014) Practical Data Science with R.
 2. Zheng, A., Casari A. (2018). Feature Engineering for Machine Learning.
