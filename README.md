@@ -61,7 +61,33 @@ We've got plenty of ideas to refine for the next contest. Too bad the next pure-
 
 ## (4) Missing Value Imputation
 
-## (5) EDA
+```R
+mice.data_train <- mice(cs_training02,
+                        m = 1,           
+                        maxit = 1,      # max iteration
+                        method = "cart", 
+                        seed = 188,
+                        print= T )      
+
+mice.data_test <- mice(cs_test02,
+                       m = 1,           
+                       maxit = 1,      # max iteration
+                       method = "cart", 
+                       seed = 188,
+                       print= T )   
+```
+Imputing training data and test data to avoid *"data leakage"*. This whole dataset is huge, with training dataset is a 150,000 x 11 matirx along with test dataset is a 101,503 x 11 matirx. We use mice() with method = "cart" since the size of the dataset make using "rf" too time-consuming.
+
+## (5) EDA (Exploratory Data Analysis)
+
+![02](02_hist_1.png)
+![03](03_hist_2.png)
+![04](04_correlation_1.png)
+
+![05](05_hist_3.png)
+![06](06_hist_4.png)
+![07](07_correlation_2.png)
+
 
 ## (6) Feature Engineering
 
