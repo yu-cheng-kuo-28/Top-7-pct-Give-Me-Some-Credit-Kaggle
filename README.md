@@ -4,6 +4,11 @@
 - I did this project in 2020/06 as the final project of the *graduate level* course **"R Computing for Business Data Analytics"** of *department of MIS* in NCCU. In addition, I got ***97 (A+)*** in this course.
 - Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detials.
 
+## Outline
+(1) Introduction
+1-1 Overall
+1-2 Dataset
+
 
 ## (1) Introduction
 
