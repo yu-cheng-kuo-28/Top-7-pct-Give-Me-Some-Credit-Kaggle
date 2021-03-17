@@ -7,7 +7,12 @@
 ## Outline
 (1) Introduction \
 &nbsp; 1-1 Overall \
-&nbsp;1-2 Dataset
+&nbsp; 1-2 Dataset
+&nbsp; 1-3 Explaination of R code
+
+(2) Literature Review
+
+(3) Imbalanced Classification
 
 
 ## (1) Introduction
