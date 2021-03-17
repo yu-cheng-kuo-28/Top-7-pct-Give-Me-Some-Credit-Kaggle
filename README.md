@@ -104,16 +104,16 @@ Besides, there are 3 highly related features.
 
 ## (6) Feature Engineering
 
-1. RevolvingUtilizationOfUnsecuredLines：Changing values > 1.2 to 1.2, yielding new feature "BaLim_ratio".
-2. age：Changing an outlier at age = 0 to the closest value 20, yielding new feature "age_2".
-3. MonthlyIncome：Changing values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
-4. NumberOfDependents： Changing values > 2 to 2, yielding new feature "Dep".
-5. DebtRatio：Changing values > 1200 to 6, Changing 1200 > values > 6 to 5, yielding new feature "D_Ratio".  
-6. NumberOfOpenCreditLinesAndLoans：All values +1, then taking log(), yielding new feature "OCLAL". 
-7. NumberRealEstateLoansOrLines：Changing values > 5 to 5, yielding new feature "REOL".
-8. NumberOfTime30.59DaysPastDueNotWorse：Changing values > 3 to 3, yielding new feature "Num_30.59". 
-9. NumberOfTime60.89DaysPastDueNotWorse：Changing values > 2 to 2, yielding new feature "Num_60.89".  
-10. NumberOfTimes90DaysLate：Changing values > 2 to 2, yielding new feature "Num_90".
+1. **RevolvingUtilizationOfUnsecuredLines**：Changing values > 1.2 to 1.2, yielding new feature "BaLim_ratio".
+2. **age**：Changing an outlier at age = 0 to the closest value 20, yielding new feature "age_2".
+3. **MonthlyIncome**：Changing values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
+4. **NumberOfDependents**： Changing values > 2 to 2, yielding new feature "Dep".
+5. **DebtRatio**：Changing values > 1200 to 6, Changing 1200 > values > 6 to 5, yielding new feature "D_Ratio".  
+6. **NumberOfOpenCreditLinesAndLoans**：All values +1, then taking log(), yielding new feature "OCLAL". 
+7. **NumberRealEstateLoansOrLines**：Changing values > 5 to 5, yielding new feature "REOL".
+8. **NumberOfTime30.59DaysPastDueNotWorse**：Changing values > 3 to 3, yielding new feature "Num_30.59". 
+9. **NumberOfTime60.89DaysPastDueNotWorse**：Changing values > 2 to 2, yielding new feature "Num_60.89".  
+10. **NumberOfTimes90DaysLate**：Changing values > 2 to 2, yielding new feature "Num_90".
 
 
 ## (7) EDA after Feature Engineering
