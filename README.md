@@ -199,7 +199,7 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 #### 8-6-3 XGBoost
 ![10](10_XGBoosT.png)
 
-From the fact that XGBoost outperforms RF, we conlude that the noise of this dataset is negligible. Confirming the noise exist or not could result in completely different implications for tuning.  
+From the fact that XGBoost outperforms RF, we conclude that the noise of this dataset is negligible. Confirming the noise exist or not could result in completely different implications for tuning.  
 
 #### 8-6-4 Stacking
 ![11](11_stacking.png)
