@@ -56,6 +56,7 @@ We've got plenty of ideas to refine for the next contest. Too bad the next pure-
 
 ## (3) Imbalanced Classification
 
+![01](01_imbalanced_response.png)
 
 
 ## (4) Missing Value Imputation
