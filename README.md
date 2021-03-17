@@ -6,8 +6,8 @@
 
 ## Outline
 (1) Introduction \
-\t 1-1 Overall \
-\t 1-2 Dataset
++  1-1 Overall \
++  1-2 Dataset
 
 
 ## (1) Introduction
