@@ -5,9 +5,9 @@
 - Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detials.
 
 ## Outline
-(1) Introduction
-1-1 Overall
-1-2 Dataset
+(1) Introduction \
+\t 1-1 Overall \
+\t 1-2 Dataset
 
 
 ## (1) Introduction
