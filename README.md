@@ -2,15 +2,26 @@
 ***6.82% (63/924) on private leaderboard in a closed competition in 2011***
 
 - I did this project in 2020/06 as the final project of the *graduate level* course **"R Computing for Business Data Analytics"** of *department of MIS* in NCCU. In addition, I got ***97 (A+)*** in this course.
-- Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detialed analysis.
+- Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detials.
 
 
 ## (1) Introduction
 
+### 1-1 Overall
 - It's a [closed cometition on Kaggle in 2011](https://www.kaggle.com/c/GiveMeSomeCredit/overview). Competitors were required to predict credit deault based on an unbalanced dataset with target having (0, 1) = (93.32% , 6.68%). Therefore, the model evaluation metric was AUC.
 - No.1 ~ No.3 won prizes. No.4 ~ No.11 won gold medals. No.12 ~ No.50 won silver medals. No.51 ~ No.100 won bronze medals. 
 - I did this project in 2020/06 as the final project of the *graduate level* course **"R Computing for Business Data Analytics"** of *department of MIS* in NCCU. In addition, I got ***97 (A+)*** in this course.
 - After thorough feature engineering, I leveraged LR, RF & XGBoost, then did a double-layer stacking. Finally, I got ***14.83% (17/924) on public leaderboard*** and ***6.82% (63/924) on private leaderboard***, which equivalent to getting a ***bronze medal*** in this long closed competition. 
+
+### 1-2 Explaination of R code
+
+1. BDA_final_01_mice: 
+輸入原始資料「Data/train」、「Data/test」，缺失值填補，得到了「cs_all_cart」、
+「train_ans」兩個 csv，由於缺失值填補得多上一些時間，因此特別拆分出來。
+2. BDA_final_02_LR：輸入「cs_all_cart」、「train_ans」。做EDA。使用Logistic Regression，並輸
+出預測結果，然後將結果上傳 Kaggle。
+3. BDA_final_03_Treelike_tuning：取全部15 萬筆資料中的1 萬筆做RF、XGBT，以快速地調參。
+4. BDA_final_04_Treelike_stacking：調參完後，使用全部的15 萬筆資料，將結果上傳至 Kaggle。
 
 
 ## (2) Literature Review
@@ -84,9 +95,12 @@ EDA stands for exploratory data analysis. Below are the original distributions &
 
 ![02](02_hist_1.png)
 ![03](03_hist_2.png)
+
+We find there are considerable outliers and most of the features are slightly positively skewed
+
 ![04](04_correlation_1.png)
 
-We find there are considerable outliers and most of the features are slightly positively skewed. Besides, there are 3 highly related features.
+Besides, there are 3 highly related features.
 
 ## (6) Feature Engineering
 
@@ -102,13 +116,91 @@ We find there are considerable outliers and most of the features are slightly po
 10. NumberOfTimes90DaysLate：Changing values > 2 to 2, yielding new feature "Num_90".
 
 
-
-
 ## (7) EDA after Feature Engineering
 
+![05](05_hist_3.png)
+![06](06_hist_4.png)
+
+After handling the considerable outliers and taking log(), the features now are more like normal distributions. 
+
+![07](07_correlation_2.png)
+
+The cells with high correlations lessen. The significant relation between *"Income_log"* & *"Income_bool"* would bother since we would find *"Income_bool"* does raise the prediction performance. 
 
 
-## (8) Model Building & Feature Selection
+## (8) Model Building, Feature Selection & Outcomes
+
+### 8-1 Models & Model Evaluation
+We adopt 3 methods as follows:
+1. Linear Regression
+2. Random Forest)
+3. XGBoosT 
+
+Since it's a imbalanced data, the required metric is AUC. 
+
+
+### 8-2 Logistic Regression
+
+```R
+model <- glm(formula = SeriousDlqin2yrs ~ age_2 + Income_log + I(Income_log^2) + 
+               I(Income_log^3) + D_Ratio + I(D_Ratio^2) + I(D_Ratio^3) + Income_bool +
+               BaLim_ratio + OCLAL + I(OCLAL^2) + Dep + REOL + Num_30.59 + 
+               Num_60.89 + Num_90 + Num_30.59:Num_90 + Num_30.59:Num_60.89 + 
+               age_2:Num_90 + Num_60.89:Num_90 + age_2:Num_60.89 + D_Ratio:BaLim_ratio + 
+               REOL:Num_90 + age_2:Num_30.59 + age_2:Dep + age_2:D_Ratio + 
+               REOL:Num_60.89 + Income_log:Num_30.59 + age_2:REOL + Income_log:REOL, 
+             family = binomial(link = "logit"), data = Credit_train)
+
+summary(model)
+AIC(model); BIC(model)
+```
+Generating higher-degree terms as well as interactions, then leveraging stepwise linear regression (both directions) to choose the influential features. Afterwards, choosing features based on AIC, BIC and the p-values of the features.
+
+
+### 8-3 Treelike Methods – Tuning
+
+Sampling 10,000 data points out of total 150,000 training data points to speed up tuning. 
+
+
+### 8-4 Treelike Methods – Result
+
+Utilize the tuning results on the whole training dataset with 15,000 data points. 
+
+
+### 8-5 Stacking
+
+Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models using mean respectively. Next, put several LR_stacking, RF_stacking & XGBT_stacking together and do another stacking using mean. Then, we obtain the final AUC results.
+
+
+### 8-6 Submissions on Kaggle
+
+*"Private Score"* on the left, and *"Public Score"* on the right.
+
+#### 8-6-1 LR
+
+#### 8-6-2 RF
+
+#### 8-6-3 XGBoost
+
+#### 8-6-1 Stacking
+
+#### 8-6-1 Stacking02
+
+#### 8-6-1 Stacking03
+
+#### 8-6-1 Stacking04
+
+#### 8-6-1 Stacking05
+
+#### 8-6-1 Stacking06
+
+#### 8-6-1 Stacking07
+
+#### 8-6-1 Public Score leaderboard
+
+#### 8-6-1 Private Score leaderboard (final standings)
+
+
 
 
 ## (9) Conclusion 
