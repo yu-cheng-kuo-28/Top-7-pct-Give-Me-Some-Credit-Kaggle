@@ -182,6 +182,8 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 #### 8-6-3 XGBoost
 ![10](10_XGBoosT.png)
 
+From the fact that XGBoost outperforms RF, we conlude that the noise of this dataset is negligible. Confirming the noise exist or not could result in completely different implications for tuning.  
+
 #### 8-6-4 Stacking
 ![11](11_stacking.png)
 
@@ -216,9 +218,11 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 ![21](21_Private_Ranking.png)
 
 
-
 ## (9) Conclusion 
 
+We choose the best public socre one with 14.83% (137/924), which implies that we achieve 6.82% (63/924) on private leaderboard.  
+
+As for reflection, We may add interactions in to RF & XGBoost models in the future. 
 
 
 ## (10) Reference
