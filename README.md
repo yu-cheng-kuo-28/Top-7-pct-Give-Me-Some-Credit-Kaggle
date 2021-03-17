@@ -243,7 +243,7 @@ From the fact that XGBoost outperforms RF, we conlude that the noise of this dat
 
 
 ## (10) Reference
-1. heng, A., Casari A. (2018). Feature Engineering for Machine Learning.
-2. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
+1. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
+2. Zheng, A., Casari A. (2018). Feature Engineering for Machine Learning.
 3. Zumel, N., Mount, J. (2014) Practical Data Science with R.
 4. Online forum of the dataset “Give Me Some Credit”(2011) on Kaggle. Retrieved from https://bit.ly/3eWviGl
