@@ -6,12 +6,16 @@
 
 
 ## (1) Introduction
+
 - It's a [closed cometition on Kaggle in 2011](https://www.kaggle.com/c/GiveMeSomeCredit/overview). Competitors were required to predict credit deault based on an unbalanced dataset with target having (0, 1) = (93.32% , 6.68%). Therefore, the model evaluation metric was AUC.
 - No.1 ~ No.3 won prizes. No.4 ~ No.11 won gold medals. No.12 ~ No.50 won silver medals. No.51 ~ No.100 won bronze medals. 
 - I did this project in 2020/06 as the final project of the *graduate level* course **"R Computing for Business Data Analytics"** of *department of MIS* in NCCU. In addition, I got ***97 (A+)*** in this course.
 - After thorough feature engineering, I leveraged LR, RF & XGBoost, then did a double-layer stacking. Finally, I got ***14.83% (17/924) on public leaderboard*** and ***6.82% (63/924) on private leaderboard***, which equivalent to getting a ***bronze medal*** in this long closed competition. 
 
+
 ## (2) Literature Review
+
+Before we get started, let's take a close look at recommendations from those top-tier competitors.
 
 ### 2-1 Alec Stephenson • (1st in this Competition) • 9 years ago • Options • Report • Reply
 
@@ -48,3 +52,7 @@ So yea, we really needed to work better on "balancing" our random forests.
 This was the first contest we actually got to what's commonly called "ensembling"; i.e. combining the above algorithms. That's definitely where we hit some hiccups and spun our wheels for awhile. We pulled it out okay, but I must say finishing just out of the money is quite annoying. We can claim to be very consistent in ranking though. We didn't over or underfit much at all. Mostly that's just because we didn't put huge trust in the leaderboard (we didn't use it to tune any parameters at least.) It did steer us away from our best ensembling approach though. We still threw it in though because we'd spent so much time on it. And that helped us stick 5th place.
 
 We've got plenty of ideas to refine for the next contest. Too bad the next pure-ish classification contest is ending in a couple weeks. I just don't want to put in that much time over the holidays.
+
+
+## (3) 0.0
+
