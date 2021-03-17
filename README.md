@@ -15,13 +15,10 @@
 
 ### 1-2 Explaination of R code
 
-1. BDA_final_01_mice: 
-輸入原始資料「Data/train」、「Data/test」，缺失值填補，得到了「cs_all_cart」、
-「train_ans」兩個 csv，由於缺失值填補得多上一些時間，因此特別拆分出來。
-2. BDA_final_02_LR：輸入「cs_all_cart」、「train_ans」。做EDA。使用Logistic Regression，並輸
-出預測結果，然後將結果上傳 Kaggle。
-3. BDA_final_03_Treelike_tuning：取全部15 萬筆資料中的1 萬筆做RF、XGBT，以快速地調參。
-4. BDA_final_04_Treelike_stacking：調參完後，使用全部的15 萬筆資料，將結果上傳至 Kaggle。
+1. ***BDA_final_01_mice***: Inputting *"train.csv" & **"test.csv"* then conducting missing value impuation. Generating *"cs_all_cart_imputed.csv"* & *"train_ans.csv"*.
+2. ***BDA_final_02_LR***: Inputting *"cs_all_cart_imputed.csv"* & *"train_ans.csv"* and do EDA (exploratory data analysis). and LR.
+3. ***BDA_final_03_Treelike_tuning***: Sampling 10,000 data points out of total 150,000 training data points, allwoing us speed up tuning.
+4. ***BDA_final_04_Treelike_stacking***: After tuning, using the whole training dataset to get the final model.
 
 
 ## (2) Literature Review
@@ -182,23 +179,28 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 
 #### 8-6-3 XGBoost
 
-#### 8-6-1 Stacking
+#### 8-6-4 Stacking
 
-#### 8-6-1 Stacking02
+#### 8-6-5 Stacking02
 
-#### 8-6-1 Stacking03
+#### 8-6-6 Stacking03
 
-#### 8-6-1 Stacking04
+#### 8-6-7 Stacking04
 
-#### 8-6-1 Stacking05
+#### 8-6-8 Stacking05
 
-#### 8-6-1 Stacking06
+#### 8-6-9 Stacking06
 
-#### 8-6-1 Stacking07
+#### 8-6-10 Stacking07
 
-#### 8-6-1 Public Score leaderboard
+#### 8-6-11 Stacking08
 
-#### 8-6-1 Private Score leaderboard (final standings)
+
+
+#### 8-6-12 Public Score Leaderboard
+
+
+#### 8-6-13 Private Score Leaderboard (Final Ranking)
 
 
 
@@ -208,9 +210,7 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 
 
 ## (10) Reference
-
-1. Zumel, N., Mount, J. (2014) Practical Data Science with R.
-2. Zheng, A., Casari A. (2018). Feature Engineering for Machine Learning.
-3. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
-4. Online forum of the dataset “GiveMeSomeCredit”(2012). Retrieved from
-https://www.kaggle.com/c/GiveMeSomeCredit/discussion
+1. heng, A., Casari A. (2018). Feature Engineering for Machine Learning.
+2. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
+3. Zumel, N., Mount, J. (2014) Practical Data Science with R.
+4. Online forum of the dataset “Give Me Some Credit”(2012) on Kaggle. Retrieved from https://bit.ly/3eWviGl
