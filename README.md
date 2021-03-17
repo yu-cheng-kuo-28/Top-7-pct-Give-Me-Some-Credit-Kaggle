@@ -27,7 +27,7 @@
 
 ### 1-2 Dataset
 
-A dataset aims for predicting credit defaults.
+A dataset aims for predicting credit default.
 
 
 ### 1-3 Explaination of R code
