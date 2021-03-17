@@ -174,12 +174,16 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 *"Private Score"* on the left, and *"Public Score"* on the right.
 
 #### 8-6-1 LR
+![08](08_LR.png)
 
 #### 8-6-2 RF
+![09](09_RF.png)
 
 #### 8-6-3 XGBoost
+![10](10_XGBoosT.png)
 
 #### 8-6-4 Stacking
+![11](11_stacking.png)
 
 #### 8-6-5 Stacking02
 
