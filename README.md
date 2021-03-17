@@ -12,7 +12,7 @@
 (5) EDA before Feature Engineering \
 (6) Feature Engineering \
 (7) EDA after Feature Engineering \
-(8) Model Building, Feature Selection & Outcomes \
+(8) Model Building, Feature Selection & Outcomes: LR, RF & XGBoost with Stacking \
 (9) Conclusion \
 (10) Reference
 
@@ -142,7 +142,7 @@ After handling the considerable outliers and taking log(), the features now are 
 The cells with high correlations lessen. The significant relation between *"Income_log"* & *"Income_bool"* would bother since we would find *"Income_bool"* does raise the prediction performance. 
 
 
-## (8) Model Building, Feature Selection & Outcomes
+## (8) Model Building, Feature Selection & Outcomes: LR, RF & XGBoost with Stacking 
 
 ### 8-1 Models & Model Evaluation
 We adopt 3 methods as follows:
