@@ -238,7 +238,7 @@ From the fact that XGBoost outperforms RF, we conclude that the noise of this da
 
 ## (9) Conclusion 
 
-- We choose the best public socre one with 14.83% (137/924) on public leaderboard, which correspond to achieving 6.82% (63/924) on private leaderboard, which is equivalent to getting a bronze medal in this long closed competition.
+- We choose the best public score one with 14.83% (137/924) on public leaderboard, which correspond to achieving 6.82% (63/924) on private leaderboard, which is equivalent to getting a bronze medal in this long closed competition.
 
 - As for reflection, We may add interactions in to RF & XGBoost models for better performance.
 
