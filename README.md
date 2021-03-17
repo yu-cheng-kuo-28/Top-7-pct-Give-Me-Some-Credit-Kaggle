@@ -15,7 +15,7 @@
 
 ## (2) Literature Review
 
-Before we get started, let's take a close look at recommendations from those top-tier competitors.
+Before we get started, let's take a close look at [recommendations from those top-tier competitors](https://www.kaggle.com/c/GiveMeSomeCredit/discussion/1166#7269).
 
 ### 2-1 Alec Stephenson • (1st in this Competition) • 9 years ago • Options • Report • Reply
 
