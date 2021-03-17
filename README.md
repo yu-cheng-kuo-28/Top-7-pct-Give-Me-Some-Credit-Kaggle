@@ -186,26 +186,34 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 ![11](11_stacking.png)
 
 #### 8-6-5 Stacking02
+![12](12_stacking02.png)
 
 #### 8-6-6 Stacking03
+![13](13_stacking03.png)
 
 #### 8-6-7 Stacking04
+![14](14_stacking04.png)
 
 #### 8-6-8 Stacking05
+![15](15_stacking05.png)
 
 #### 8-6-9 Stacking06
+![16](16_stacking06.png)
 
 #### 8-6-10 Stacking07
+![17](17_stacking07.png)
 
 #### 8-6-11 Stacking08
+![18](18_stacking08.png)
 
+#### 8-6-12 The Best Outcomes
+![19](19_Ranking.png)
 
+#### 8-6-13 Public Score Leaderboard
+![20](20_Public_Ranking.png)
 
-#### 8-6-12 Public Score Leaderboard
-
-
-#### 8-6-13 Private Score Leaderboard (Final Ranking)
-
+#### 8-6-14 Private Score Leaderboard (Final Ranking)
+![21](21_Private_Ranking.png)
 
 
 
