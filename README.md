@@ -5,15 +5,16 @@
 - Chinese reader may refer to the file **"(Chinese)Give_Me_Credit_Morton_Kuo.pdf"**, which is the orignial Chinese report, for more detials.
 
 ## Outline
-(1) Introduction \
-&nbsp; 1-1 Overall \
-&nbsp; 1-2 Dataset
-&nbsp; 1-3 Explaination of R code
-
+(1) Introduction
 (2) Literature Review
-
 (3) Imbalanced Classification
-
+(4) Missing Value Imputation
+(5) EDA before Feature Engineering
+(6) Feature Engineering
+(7) EDA after Feature Engineering
+(8) Model Building, Feature Selection & Outcomes
+(9) Conclusion
+(10) Reference
 
 ## (1) Introduction
 
