@@ -220,9 +220,9 @@ From the fact that XGBoost outperforms RF, we conlude that the noise of this dat
 
 ## (9) Conclusion 
 
-We choose the best public socre one with 14.83% (137/924), which implies that we achieve 6.82% (63/924) on private leaderboard.  
+- We choose the best public socre one with 14.83% (137/924), which implies that we achieve 6.82% (63/924) on private leaderboard.  
 
-As for reflection, We may add interactions in to RF & XGBoost models in the future. 
+- As for reflection, We may add interactions in to RF & XGBoost models in the future. 
 
 
 ## (10) Reference
