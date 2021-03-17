@@ -146,7 +146,7 @@ The cells with high correlations lessen. The significant relation between *"Inco
 
 ### 8-1 Models & Model Evaluation
 We adopt 3 methods as follows:
-1. Linear Regression
+1. Logistic Regression
 2. Random Forest)
 3. XGBoosT 
 
@@ -168,7 +168,7 @@ model <- glm(formula = SeriousDlqin2yrs ~ age_2 + Income_log + I(Income_log^2) +
 summary(model)
 AIC(model); BIC(model)
 ```
-Generating higher-degree terms as well as interactions, then leveraging stepwise linear regression (both directions) to choose the influential features. Afterwards, choosing features based on AIC, BIC and the p-values of the features.
+Generating higher-degree terms as well as interactions, then leveraging stepwise logistic regression (both directions) to choose the influential features. Afterwards, choosing features based on AIC, BIC and the p-values of the features.
 
 
 ### 8-3 Treelike Methods – Tuning
