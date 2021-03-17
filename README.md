@@ -86,25 +86,20 @@ EDA stands for exploratory data analysis. Below are the original distributions &
 ![03](03_hist_2.png)
 ![04](04_correlation_1.png)
 
-We find most of the features are slightly positively skewed. Besides, there are 3 highly related features.
+We find there are considerable outliers and most of the features are slightly positively skewed. Besides, there are 3 highly related features.
 
 ## (6) Feature Engineering
 
 1. RevolvingUtilizationOfUnsecuredLines：Changing values > 1.2 to 1.2, yielding new feature "BaLim_ratio".
 2. age：Changing an outlier at age = 0 to the closest value 20, yielding new feature "age_2".
-4. MonthlyIncome：Changing values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
-
-4. NumberOfDependents：將NumberOfDependents >2 的極端值改成 2，產生新變數 Dep。
-5. DebtRatio：將DebtRatio >= 1200 的改成6，將 1200 > DebtRatio > 的改成5 ，產生新變數D_Ratio。
-11
-6. NumberOfOpenCreditLinesAndLoans：+1 後取log( )，產生新變數 OCLAL。
-7. NumberRealEstateLoansOrLines：將NumberRealEstateLoansOrLines >5 的改成5，產生新變數
-REOL。
-8. NumberOfTime30.59DaysPastDueNotWorse：將59DaysPastDueNotWorse >3 的改成3，產生新變數
-Num_30.59。
-9. NumberOfTime60.89DaysPastDueNotWorse：將NumberOfTime60.89DaysPastDueNotWorse >2 的改
-成2，產生新變數Num_60.89。
-10. NumberOfTimes90DaysLate：將NumberOfTimes90DaysLate >2 的改成2，產生新變數Num_90。
+3. MonthlyIncome：Changing values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
+4. NumberOfDependents： Changing values > 2 to 2, yielding new feature "Dep".
+5. DebtRatio：Changing values > 1200 to 6, Changing 1200 > values > 6 to 5, yielding new feature "D_Ratio".  
+6. NumberOfOpenCreditLinesAndLoans：All values +1, then taking log(), yielding new feature "OCLAL". 
+7. NumberRealEstateLoansOrLines：Changing values > 5 to 5, yielding new feature "REOL".
+8. NumberOfTime30.59DaysPastDueNotWorse：Changing values > 3 to 3, yielding new feature "Num_30.59". 
+9. NumberOfTime60.89DaysPastDueNotWorse：Changing values > 2 to 2, yielding new feature "Num_60.89".  
+10. NumberOfTimes90DaysLate：Changing values > 2 to 2, yielding new feature "Num_90".
 
 
 
