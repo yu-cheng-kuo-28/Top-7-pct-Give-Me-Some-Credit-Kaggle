@@ -54,5 +54,25 @@ This was the first contest we actually got to what's commonly called "ensembling
 We've got plenty of ideas to refine for the next contest. Too bad the next pure-ish classification contest is ending in a couple weeks. I just don't want to put in that much time over the holidays.
 
 
-## (3) 0.0
+## (3) Imbalanced Classification
 
+## (4) Missing Value Imputation
+
+## (5) EDA
+
+## (6) Feature Engineering
+
+## (7) Model Building & Feature Selection
+
+
+## (8) Conclusion 
+
+
+
+## (9) Reference
+
+1. Zumel, N., Mount, J. (2014) Practical Data Science with R.
+2. Zheng, A., Casari A. (2018). Feature Engineering for Machine Learning.
+3. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
+4. Online forum of the dataset “GiveMeSomeCredit”(2012). Retrieved from
+https://www.kaggle.com/c/GiveMeSomeCredit/discussion
