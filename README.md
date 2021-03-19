@@ -18,7 +18,7 @@
 
 ## (1) Introduction
 
-### 1-1 Overall
+### 1-1 Overview
 
 - It's a [closed competition on Kaggle in 2011](https://www.kaggle.com/c/GiveMeSomeCredit/overview). Competitors were required to predict credit default based on an unbalanced dataset with target having (0, 1) = (93.32% , 6.68%). Therefore, the model evaluation metric was AUC.
 - No.1 ~ No.3 won prizes. No.4 ~ No.11 won gold medals. No.12 ~ No.50 won silver medals. No.51 ~ No.100 won bronze medals. 
@@ -118,16 +118,16 @@ Besides, there are 3 highly related features.
 
 ## (6) Feature Engineering
 
-1. **RevolvingUtilizationOfUnsecuredLines**：Converting values > 1.2 to 1.2, yielding new feature "BaLim_ratio".
-2. **age**：Converting an outlier at age = 0 to the closest value 20, yielding new feature "age_2".
-3. **MonthlyIncome**：Converting values > 23300 to 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
-4. **NumberOfDependents**： Converting values > 2 to 2, yielding new feature "Dep".
-5. **DebtRatio**：Converting values > 1200 to 6, Converting 1200 > values > 6 to 5, yielding new feature "D_Ratio".  
+1. **RevolvingUtilizationOfUnsecuredLines**：Converting values > 1.2 into 1.2, yielding new feature "BaLim_ratio".
+2. **age**：Converting an outlier at age = 0 into the closest value 20, yielding new feature "age_2".
+3. **MonthlyIncome**：Converting values > 23300 into 23300, adding 10 to all values, then taking log(), yielding new feature "Income_log". Next, creating a new feature "Income_bool", with two categories MonthlyIncome = 0 and MonthlyIncome =/= 0. We figure that those with 0 monthly income might be students or housewives, and they may display different charateristics from the others.
+4. **NumberOfDependents**： Converting values > 2 into 2, yielding new feature "Dep".
+5. **DebtRatio**：Converting values > 1200 into 6, Converting 1200 > values > 6 into 5, yielding new feature "D_Ratio".  
 6. **NumberOfOpenCreditLinesAndLoans**：All values +1, then taking log(), yielding new feature "OCLAL". 
-7. **NumberRealEstateLoansOrLines**：Converting values > 5 to 5, yielding new feature "REOL".
-8. **NumberOfTime30.59DaysPastDueNotWorse**：Converting values > 3 to 3, yielding new feature "Num_30.59". 
-9. **NumberOfTime60.89DaysPastDueNotWorse**：Converting values > 2 to 2, yielding new feature "Num_60.89".  
-10. **NumberOfTimes90DaysLate**：Converting values > 2 to 2, yielding new feature "Num_90".
+7. **NumberRealEstateLoansOrLines**：Converting values > 5 into 5, yielding new feature "REOL".
+8. **NumberOfTime30.59DaysPastDueNotWorse**：Converting values > 3 into 3, yielding new feature "Num_30.59". 
+9. **NumberOfTime60.89DaysPastDueNotWorse**：Converting values > 2 into 2, yielding new feature "Num_60.89".  
+10. **NumberOfTimes90DaysLate**：Converting values > 2 into 2, yielding new feature "Num_90".
 
 
 ## (7) EDA after Feature Engineering
