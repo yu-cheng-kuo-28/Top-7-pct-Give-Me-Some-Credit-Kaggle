@@ -14,7 +14,7 @@
 (7) EDA after Feature Engineering \
 (8) Model Building, Feature Selection & Outcomes: LR, RF & XGBoost with Stacking \
 (9) Conclusion \
-(10) Reference
+(10) References
 
 ## (1) Introduction
 
@@ -243,7 +243,7 @@ From the fact that XGBoost outperforms RF, we conclude that the noise of this da
 - We may add interactions in to RF & XGBoost models for better performance.
 
 
-## (10) Reference
+## (10) References
 1. Ozdemir, S., Susarla, D. (2018). Feature Engineering Made Easy.
 2. Zheng, A., Casari A. (2018). Feature Engineering for Machine Learning.
 3. Bonaccorso, G. (2017).  Machine Learning Algorithms (2nd ed.). Birmingham, UK: Packt Publishing.
