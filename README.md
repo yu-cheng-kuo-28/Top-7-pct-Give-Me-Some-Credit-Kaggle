@@ -81,7 +81,9 @@ We've got plenty of ideas to refine for the next contest. Too bad the next pure-
 
 ## (3) Imbalanced Classification
 
-![01](01_imbalanced_response.png)
+<div class="flexible-container">
+  <img src="pictures/01_imbalanced_response.png" height="300">
+</div>
 
 
 ## (4) Missing Value Imputation
@@ -107,8 +109,10 @@ Imputing training data and test data to avoid *"data leakage"*. This whole datas
 
 EDA stands for exploratory data analysis. Below are the original distributions & correlation matirx of features.
 
-![02](02_hist_1.png)
-![03](03_hist_2.png)
+<div class="flexible-container">
+  <img src="pictures/02_hist_1.png" height="500">
+  <img src="pictures/03_hist_2.png" height="500">
+</div>
 
 We find there are considerable outliers and most of the features are slightly positively skewed
 
