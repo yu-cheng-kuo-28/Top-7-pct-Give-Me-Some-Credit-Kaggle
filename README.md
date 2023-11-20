@@ -252,7 +252,7 @@ From the fact that XGBoost outperforms RF, we conclude that the noise of this da
 
 #### 8-6-10 Stacking07
 <div class="flexible-container">
-  <img src="pictures/17_stacking07.png" height="150">
+  <img src="pictures/17_stacking07.png" height="190">
 </div>
 
 #### 8-6-11 Stacking08
