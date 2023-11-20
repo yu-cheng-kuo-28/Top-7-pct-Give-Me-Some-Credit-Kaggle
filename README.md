@@ -148,7 +148,9 @@ Besides, there are 3 highly related features.
 
 After handling the considerable outliers and taking log(), the features now are more like normal distributions. 
 
-![07](07_correlation_2.png)
+<div class="flexible-container">
+  <img src="pictures/(07_correlation_2.png" height="500">
+</div>
 
 The cells with high correlations lessen. The significant relation between *"Income_log"* & *"Income_bool"* would bother since we would find *"Income_bool"* does raise the prediction performance. 
 
