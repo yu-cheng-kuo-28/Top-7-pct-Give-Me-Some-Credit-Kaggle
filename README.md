@@ -111,12 +111,14 @@ EDA stands for exploratory data analysis. Below are the original distributions &
 
 <div class="flexible-container">
   <img src="pictures/02_hist_1.png" height="500">
-  <img src="pictures/03_hist_2.png" height="500">
+  <img src="pictures/03_hist_2.png" height="600">
 </div>
 
 We find there are considerable outliers and most of the features are slightly positively skewed
 
-![04](04_correlation_1.png)
+<div class="flexible-container">
+  <img src="pictures/(04_correlation_1.png" height="500">
+</div>
 
 Besides, there are 3 highly related features.
 
@@ -136,8 +138,12 @@ Besides, there are 3 highly related features.
 
 ## (7) EDA after Feature Engineering
 
-![05](05_hist_3.png)
-![06](06_hist_4.png)
+<div class="flexible-container">
+  <img src="pictures/(05_hist_3.png" height="500">
+</div>
+<div class="flexible-container">
+  <img src="pictures/(06_hist_4.png" height="600">
+</div>
 
 After handling the considerable outliers and taking log(), the features now are more like normal distributions. 
 
