@@ -141,8 +141,9 @@ Besides, there are 3 highly related features.
 <div class="flexible-container">
   <img src="pictures/(05_hist_3.png" height="500">
 </div>
+
 <div class="flexible-container">
-  <img src="pictures/(06_hist_4.png" height="600">
+  <img src="pictures/(06_hist_4.png" height="500">
 </div>
 
 After handling the considerable outliers and taking log(), the features now are more like normal distributions. 
