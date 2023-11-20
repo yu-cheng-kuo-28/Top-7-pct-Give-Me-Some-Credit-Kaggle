@@ -204,48 +204,76 @@ Adopting two-layer stacking. First, get the stacking of LR, RF & XGBoost models 
 *"Private Score"* on the left, and *"Public Score"* on the right.
 
 #### 8-6-1 LR
-![08](08_LR.png)
+<div class="flexible-container">
+  <img src="pictures/08_LR.png" height="400">
+</div>
 
 #### 8-6-2 RF
-![09](09_RF.png)
+<div class="flexible-container">
+  <img src="pictures/09_RF.png" height="400">
+</div>
 
 #### 8-6-3 XGBoost
-![10](10_XGBoosT.png)
+<div class="flexible-container">
+  <img src="pictures/10_XGBoosT.png" height="400">
+</div>
 
 From the fact that XGBoost outperforms RF, we conclude that the noise of this dataset is negligible. Confirming the noise exist or not could result in completely different implications for tuning.  
 
 #### 8-6-4 Stacking
-![11](11_stacking.png)
+<div class="flexible-container">
+  <img src="pictures/11_stacking.png" height="400">
+</div>
 
 #### 8-6-5 Stacking02
-![12](12_stacking02.png)
+<div class="flexible-container">
+  <img src="pictures/12_stacking02.png" height="400">
+</div>
 
 #### 8-6-6 Stacking03
-![13](13_stacking03.png)
+<div class="flexible-container">
+  <img src="pictures/13_stacking03.png" height="400">
+</div>
 
 #### 8-6-7 Stacking04
-![14](14_stacking04.png)
+<div class="flexible-container">
+  <img src="pictures/14_stacking04.png" height="400">
+</div>
 
 #### 8-6-8 Stacking05
-![15](15_stacking05.png)
+<div class="flexible-container">
+  <img src="pictures/15_stacking05.png" height="400">
+</div>
 
 #### 8-6-9 Stacking06
-![16](16_stacking06.png)
+<div class="flexible-container">
+  <img src="pictures/16_stacking06.png" height="400">
+</div>
 
 #### 8-6-10 Stacking07
-![17](17_stacking07.png)
+<div class="flexible-container">
+  <img src="pictures/17_stacking07.png" height="400">
+</div>
 
 #### 8-6-11 Stacking08
-![18](18_stacking08.png)
+<div class="flexible-container">
+  <img src="pictures/18_stacking08.png" height="400">
+</div>
 
 #### 8-6-12 The Best Outcomes
-![19](19_Ranking.png)
+<div class="flexible-container">
+  <img src="pictures/19_Ranking.png" height="400">
+</div>
 
 #### 8-6-13 Public Score Leaderboard
-![20](20_Public_Ranking.png)
+<div class="flexible-container">
+  <img src="pictures/20_Public_Ranking.png" height="400">
+</div>
 
 #### 8-6-14 Private Score Leaderboard (Final Ranking)
-![21](21_Private_Ranking.png)
+<div class="flexible-container">
+  <img src="pictures/21_Private_Ranking.png" height="400">
+</div>
 
 - After thorough feature engineering, I leveraged LR, RF & XGBoost, then did a double-layer stacking. Finally, I got 14.83% (17/924) on public leaderboard and 6.82% (63/924) on private leaderboard, which is equivalent to getting a bronze medal in this long closed competition.
 
